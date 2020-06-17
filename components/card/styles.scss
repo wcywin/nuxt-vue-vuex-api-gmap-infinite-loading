@@ -1,0 +1,83 @@
+.c-card {
+  display: block;
+  height: 160px;
+  box-shadow: 0 3px 12px rgba($black, 0.15);
+  border: 1px solid $border-grey;
+  padding: 50px;
+  position: relative;
+  cursor: pointer;
+  margin: 20px 0;
+
+  &.is-active {
+    background: rgba($accent-color, 0.15);
+    border: 1px solid $accent-color;
+  }
+
+  &__ribbon {
+    width: 200px;
+    height: 26px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    transform: translateY(50%);
+    background: $accent-color;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      z-index: -1;
+      border-left: 5px solid transparent;
+      border-right: 5px solid $ribbon-red;
+      border-bottom: 5px solid transparent;
+      border-top: 5px solid $ribbon-red;
+    }
+  }
+
+  &__top-line,
+  &__bottom-line {
+    @extend %flex-center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    color: $secondary-text-color;
+    flex: 5;
+  }
+
+  &__services-container {
+    @extend %flex-center;
+    justify-content: space-between;
+    flex: 1.2;
+    flex-shrink: 0;
+  }
+
+  &__service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-icon {
+      display: none;
+
+      &.is-available {
+        display: block;
+      }
+    }
+  }
+
+  &__subtitle {
+    color: $tertiary-text-color;
+  }
+
+  &__email {
+    font-size: 17px;
+    color: $tertiary-text-color;
+  }
+}

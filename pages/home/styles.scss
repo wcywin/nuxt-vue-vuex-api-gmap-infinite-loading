@@ -1,0 +1,138 @@
+.c-home {
+  position: relative;
+
+  &__container {
+    width: 1000px;
+    margin: 0 auto;
+    transform: translateY(0);
+  }
+
+  &__heading-container {
+    max-height: 464px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    width: 640px;
+    margin: 120px 0 16px;
+  }
+
+  &__subheading {
+    margin: 16px 0 100px;
+  }
+
+  &__content-container {
+    background: $white;
+    min-height: 1200px;
+    box-shadow: 0 8px 16px rgba($black, 0.3);
+    padding: 50px;
+  }
+
+  &__map {
+    height: 440px;
+
+    &-info-window {
+      color: $accent-color !important;
+      width: 200px !important;
+      height: 150px !important;
+    }
+
+    &-annotation {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      line-height: 13px;
+      margin: 20px 0;
+
+      &-text {
+        color: $black;
+        font-size: 12px;
+        margin-right: 13px;
+      }
+
+      &-img {
+        width: auto;
+      }
+    }
+  }
+
+  &__cards-container {
+    margin-top: 28px;
+  }
+
+  // Google Maps classes
+  .gm-style-iw {
+    width: 420px;
+    height: 245px;
+
+    &-c {
+      border-radius: 0;
+      padding: 0;
+    }
+
+    &-t {
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  // Google Maps close button
+  button.gm-ui-hover-effect {
+    width: 50px !important;
+    height: 60px !important;
+
+    & > img {
+      width: 24px !important;
+      height: 24px !important;
+    }
+  }
+
+  // Google Maps Info Window structure and styles injected into HTML
+  .c-info-window {
+    width: 420px;
+    height: 245px;
+    background: white;
+    padding: 20px;
+    color: $secondary-text-color;
+    text-align: left;
+
+    &__heading {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    &__subheading {
+      font-size: 21px;
+      color: $tertiary-text-color;
+      height: 70px;
+      letter-spacing: -0.5px;
+    }
+
+    &__email {
+      font-size: 17px;
+      font-weight: 300;
+      color: $tertiary-text-color;
+    }
+
+    &__services {
+      display: flex;
+      align-items: center;
+    }
+
+    &__service {
+      width: 45px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+
+      &-icon {
+        font-size: 24px;
+        display: block;
+      }
+    }
+  }
+}

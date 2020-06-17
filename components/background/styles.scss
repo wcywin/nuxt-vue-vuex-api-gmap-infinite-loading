@@ -1,0 +1,30 @@
+.c-background {
+  position: absolute;
+  top: 0;
+
+  &__img {
+    display: block;
+    width: 100%;
+    position: relative;
+    max-height: 768px;
+
+    &-container {
+      position: relative;
+    }
+
+    &-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($secondary-bg, 0.87);
+    }
+  }
+
+  &__underline-img-container {
+    background-color: $accent-color;
+    width: 100%;
+    height: 91px;
+  }
+}

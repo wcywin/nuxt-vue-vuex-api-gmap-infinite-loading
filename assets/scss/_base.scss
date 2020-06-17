@@ -1,0 +1,52 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $primary-font;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+  background: $primary-bg;
+  color: $primary-text-color;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, strong, li {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  width: 100%;
+}
+
+a {
+  color: $primary-text-color;
+  transition: color $animation-delay;
+  text-decoration: none;
+
+  &:hover {
+    color: $accent-color;
+  }
+}

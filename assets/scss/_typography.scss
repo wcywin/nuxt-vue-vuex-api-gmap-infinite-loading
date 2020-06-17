@@ -1,0 +1,38 @@
+.u-typo {
+  line-height: 1.17;
+
+  &__h1 {
+    font-size: 64px;
+    letter-spacing: 1.28px;
+  }
+
+  &__h2 {
+    font-size: 34px;
+  }
+
+  &__h3 {
+    font-size: 22px;
+  }
+
+  &__h4 {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    line-height: 1.55;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+
+  &--extra-bold {
+    font-weight: 800;
+  }
+
+  &--black {
+    font-weight: 900;
+  }
+}

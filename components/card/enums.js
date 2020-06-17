@@ -1,0 +1,5 @@
+export const LOUNGE = 'Businesstravel-Service-Center'
+export const LUGGAGE = 'Gepäckaufbewahrung'
+export const LUGGAGE_2 = 'Gepäckausgabe'
+export const MONEY_TRANSFER = 'Geldwechsel'
+export const MONEY_TRANSFER_2 = 'Western Union'
