@@ -1,6 +1,7 @@
-# sff
+# Nuxt landing page with Google Maps
 
-> sff sbb nuxt app
+> nuxt app for swiss railways
+> made with Nuxt, Vue, Vuex, Api integration, Google Maps, Infinite Loading
 
 ## Build Setup
 
